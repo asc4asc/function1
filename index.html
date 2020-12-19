@@ -24,14 +24,13 @@ test me please: <p id="demo"></p>
 
 let i=1, s="";
 for (i=0; i<10; i++) { 
-  s=doit(i,s);
+  s=doit();
 }
 
-function doit(i,s) {
+function doit() {
   s = "Hello JavaS"+i+"<br>"+s; 
   document.getElementById("demo").innerHTML = s;
   console.log("Hello JavaScript!",i,"\n");
-  return(s);
 }
 </script> 
     
